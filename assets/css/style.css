@@ -1,0 +1,550 @@
+/* ---- Base CSS ---- */
+
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+.section-padding {
+    padding: 80px 0px;
+}
+a:focus {
+    outline: 0 solid
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+}
+html,
+body {
+    height: 100%
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+a:hover {
+    text-decoration: none
+}
+
+/* Remove Chrome Input Field's Unwanted Yellow Background Color */
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}
+/* ---- All Background ---- */
+
+.experience-area,
+.contact-area {
+    background: #5db7b1 none repeat scroll 0 0;
+    background: #776975;
+    background: -webkit-linear-gradient(45deg, #776975 0%, #336778 50%, #6b6976 100%);
+    background: linear-gradient(45deg, #776975 0%, #336778 50%, #6b6976 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#776975', endColorstr='#6b6976', GradientType=1);
+}
+.testimonial_area {
+    background: #64cbc0 none repeat scroll 0 0;
+}
+.work-area,
+.portfolio-area {
+    background: #f6f6f6 none repeat scroll 0 0;
+}
+.footer {
+    background: #000 none repeat scroll 0 0;
+}
+.single-block {
+    background: #8bccc5 none repeat scroll 0 0;
+}
+.single-block.left-gradient,
+.hamburger-menu {
+    background: #70627a;
+    background: -webkit-linear-gradient(45deg, #70627a 0%, #4d617b 100%);
+    background: linear-gradient(45deg, #70627a 0%, #4d617b 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#70627a', endColorstr='#4d617b', GradientType=1);
+}
+.single-block.right-gradient {
+    background: #45607b;
+    background: -webkit-linear-gradient(45deg, #45607b 0%, #6b6179 100%);
+    background: linear-gradient(45deg, #45607b 0%, #6b6179 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#45607b', endColorstr='#6b6179', GradientType=1);
+}
+.single-work {
+    background: #14C5FA none repeat scroll 0 0;
+}
+.single-work.purple-bg {
+    background: #835be9 none repeat scroll 0 0;
+}
+.single-work.black-bg {
+    background: #022352 none repeat scroll 0 0;
+}
+.single-work.red-bg {
+    background: #ff2b49 none repeat scroll 0 0;
+}
+/* ---- particles.js container ---- */
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #5db7b1 none repeat scroll 0 0;
+    background: #776975;
+    background: -webkit-linear-gradient(45deg, #776975 0%, #336778 50%, #6b6976 100%);
+    background: linear-gradient(45deg, #776975 0%, #336778 50%, #6b6976 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#776975', endColorstr='#6b6976', GradientType=1);
+}
+/* Preloader */
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 99;
+}
+#status {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-image: url("../img/preloader.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: -25px 0 0 -25px;
+}
+/* ---- Hamburger Menu CSS ---- */
+
+.hamburger-menu {
+    height: 100%;
+    position: fixed;
+    width: 0;
+    z-index: 99;
+    right: 0;
+    top: 0;
+    -webkit-transition: all 0.7s ease 0s;
+    transition: all 0.7s ease 0s;
+}
+.hamburger-menu ul {
+    display: block;
+    list-style: outside none none;
+    margin: 0;
+    padding: 70px 0 0;
+}
+.hamburger-menu ul li {
+    display: block;
+    padding: 10px;
+}
+.hamburger-menu ul li a {
+    font-size: 22px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #fff;
+}
+.menu-close {
+    background: #ff2b4a none repeat scroll 0 0;
+    border: medium none;
+    color: #fff;
+    font-size: 25px;
+    right: -100px;
+    padding: 5px 20px;
+    position: absolute;
+    top: 5%;
+}
+/* ---- Header Top --- */
+
+.header-top-area {
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    -webkit-transition: 0.3s;
+    transition: 0.3s
+}
+.menu-bars {
+    border: 3px solid #d5d4d8;
+    color: #d5d4d8;
+    display: inline-block;
+    font-size: 30px;
+    padding: 5px 10px;
+}
+.menu {
+    padding: 5px;
+}
+.logo {
+    padding: 10px;
+}
+/* ---- Hero Area ---- */
+
+.hero-area,
+.hero-area div {
+    height: 100%;
+    width: 100%;
+}
+.hero-area .hero-cell div {
+    height: auto;
+}
+.hero-table {
+    display: table;
+}
+.hero-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+.hero-text h1 {
+    color: #fff;
+    font-size: 65px;
+    padding: 15px 0;
+    position: relative;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    letter-spacing: 7px;
+}
+.hero-text h1:before,
+.hero-text h1:after {
+    background: #fff none repeat scroll 0 0;
+    content: "";
+    height: 2px;
+    left: 50%;
+    margin-left: -230px;
+    position: absolute;
+    top: 0;
+    width: 460px;
+}
+.hero-text h1:after {
+    bottom: 0;
+    top: auto;
+}
+.hero-text p {
+    color: #fff;
+    letter-spacing: 2px;
+}
+/* ---- About Area---- */
+
+.about-area {
+    padding-top: 60px;
+}
+.about-me {
+    padding-top: 70px;
+}
+.about-me h3 {
+    font-size: 18px;
+}
+.about-me p {
+    padding-top: 25px;
+}
+.paul-btn {
+    background: #ff2b49 none repeat scroll 0 0;
+    border: 1px solid #ff2b49;
+    box-shadow: 0 0 0 #fff inset;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 40px;
+    margin-top: 30px;
+}
+/* ---- Section Title ---- */
+
+.section-title h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #000;
+}
+/* ---- Work Area ---- */
+
+.single-work {
+    height: 270px;
+    text-align: center;
+    display: table;
+    width: 100%;
+    margin: 20px 0px;
+}
+.work-content {
+    display: table-cell;
+    vertical-align: middle;
+}
+.work-content a {
+    color: #fff;
+    font-size: 40px;
+}
+.work-content p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    padding-top: 20px;
+}
+/* ---- Single Block ---- */
+
+.single-block {
+    padding: 40px;
+    color: #fff;
+    margin: 20px 0px;
+}
+h2.section-heading {
+    font-size: 26px;
+    padding-bottom: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+/* ---- Experience Area ---- */
+
+.single-experience h4 {
+    font-size: 18px;
+}
+.single-experience h4 span {
+    display: block;
+    font-size: 15px;
+    font-weight: 400;
+    opacity: 0.7;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    padding-top: 15px;
+}
+.single-experience p {
+    opacity: 0.5;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+}
+.divider {
+    background: #fff none repeat scroll 0 0;
+    height: 2px;
+    opacity: 0.5;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    width: 100%;
+}
+.single-experience {
+    padding: 20px 0;
+}
+/* ---- Portfolio Area ---- */
+
+.mixitup_trigger {
+    margin: 30px 0;
+    text-align: center;
+}
+.mixitup_trigger button.filter {
+    background: #FF2B49 none repeat scroll 0 0;
+    border: 1px solid #FF2B49;
+    box-shadow: 0 0 0 #fff inset;
+    border-radius: 5px;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    margin-left: 10px;
+    padding: 10px 35px;
+    margin-bottom: 10px;
+}
+.mixitup_content {
+    min-height: 600px;
+}
+.portfoio-content {
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #FF0000;
+}
+.portfolio-hover {
+    background: rgba(255, 43, 73, 0.8) none repeat scroll 0 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: -100%;
+    width: 100%;
+    text-align: center;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.portfolio-hover a {
+    bottom: -150%;
+    color: #fff;
+    font-size: 25px;
+    left: 50%;
+    position: absolute;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    margin-bottom: -12px;
+}
+.portfoio-content:hover .portfolio-hover {
+    top: 0;
+}
+.portfoio-content:hover .portfolio-hover a {
+    bottom: 50%;
+}
+/* ---- Testimonial Area ---- */
+
+.testimonial-slider {
+    position: relative;
+}
+.single-testimonial blockquote {
+    border: medium none;
+    padding: 70px 0 30px;
+}
+.testimonial-slider:before {
+    color: #317688;
+    content: "\f10d";
+    font-family: fontawesome;
+    font-size: 50px;
+    height: 50px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 50px;
+}
+.single-testimonial p {
+    font-size: 16px;
+    opacity: 0.7;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    padding-top: 20px;
+}
+h3.client-name {
+    font-size: 18px;
+    opacity: 0.7;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    padding: 20px 0;
+}
+.owl-item .client-signature img {
+    width: auto;
+}
+h3.client-name span {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 10px;
+}
+/* ---- Contact Area ---- */
+
+.contact-area p {
+    opacity: 0.7;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+}
+.contact-area .paul-btn {
+    border: medium none;
+}
+.contact-area input,
+.contact-area textarea {
+    background: transparent none repeat scroll 0 0;
+    border: 2px solid #c2c1cb;
+    display: block;
+    font-size: 14px;
+    margin: 15px 0;
+    opacity: 0.7;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    padding: 20px;
+    width: 100%;
+}
+.contact-area textarea {
+    min-height: 140px;
+    resize: none;
+}
+.contact-area form {
+    margin: 22px 0;
+}
+/* ---- Footer Area ---- */
+
+.footer-social-link {
+    padding-bottom: 15px;
+}
+.footer-social-link a {
+    border-right: 2px solid #fff;
+    color: #fff;
+    font-size: 20px;
+    opacity: 0.7;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    padding: 0 10px;
+}
+.footer-social-link a:last-child {
+    border: medium none;
+}
+.footer-social-link a:last-child {
+    border: medium none;
+}
+.footer p {
+    color: #fff;
+    opacity: 0.5;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+}
+/* ---- Scroll to Top ---- */
+
+.scroll-top {
+    background: #ff2b49 none repeat scroll 0 0;
+    border-radius: 5px;
+    bottom: 5%;
+    height: 45px;
+    position: fixed;
+    right: 2%;
+    text-align: center;
+    width: 40px;
+}
+.scroll-top a {
+    color: #fff;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+/* ---- All  Hover Effec ---- */
+
+.menu-bars,
+.logo img,
+.paul-btn,
+.work-content a,
+.mixitup_trigger button.filter,
+.footer-social-link a,
+.hamburger-menu ul li a,
+.menu-close,
+.scroll-top {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+.menu-bars:hover {
+    color: #d5d4d8;
+    opacity: 0.7;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+}
+.logo img:hover {
+    opacity: 0.7;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+}
+.paul-btn:hover {
+    box-shadow: 125px 0 0 #fff inset;
+    color: #ff2b49;
+}
+.single-work:hover .work-content a {
+    font-size: 50px;
+}
+.mixitup_trigger button.filter:hover {
+    box-shadow: 140px 0 0 #fff inset;
+    color: #000;
+}
+.footer-social-link a:hover {
+    color: #FF2B49;
+}
+.hamburger-menu ul li a:hover {
+    color: #ff2b4a;
+}
+.menu-close:hover {
+    opacity: 0.9;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+}
+.scroll-top:hover {
+    opacity: 0.9;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+}

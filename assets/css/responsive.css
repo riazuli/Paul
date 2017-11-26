@@ -1,0 +1,52 @@
+/* Medium Layout: 1280px. */
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {}
+/* Tablet Layout: 768px. */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .about-me {
+        padding-top: 20px;
+    }
+    .about-me p {
+        padding-top: 0;
+    }
+    .paul-btn {
+        margin-top: 5px;
+    }
+    .portfoio-content img {
+        width: 100%;
+    }
+}
+/* Mobile Layout: 320px. */
+
+@media only screen and (max-width: 767px) {
+    .section-padding {
+        padding: 50px 0px;
+    }
+    .hero-text h1 {
+        font-size: 50px;
+    }
+    .hero-text h1:before,
+    .hero-text h1:after {
+        margin-left: -125px;
+        width: 260px;
+    }
+    .about-area {
+        padding: 50px 0px;
+    }
+    .about-me {
+        padding: 20px 0;
+    }
+    .portfoio-content img {
+        width: 100%;
+    }
+    .single-block {
+        padding: 25px;
+    }
+    .contact-area form {
+        margin: 0;
+    }
+}
+/* Wide Mobile Layout: 480px. */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {}
